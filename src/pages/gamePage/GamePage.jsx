@@ -8,6 +8,7 @@ import Mark from "../../components/mark/mark";
 import { getCharacters, finishGame } from "../../services/api";
 import { useNavigate } from "react-router-dom";
 import WinModal from "../../components/winModal/WinModal";
+import CharacterPanel from "../../components/CharacterPanel/CharacterPanel";
 
 function GamePage() {
   const [characters, setCharacters] = useState([]);
@@ -58,6 +59,8 @@ function GamePage() {
   return (
     <div className={style.container}>
       <NavBar />
+      <CharacterPanel characters={characters} foundCharacters={foundCharacters} />  
+  
 
       <div className={style.gamepageContainer}>
         <img
