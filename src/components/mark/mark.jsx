@@ -1,4 +1,4 @@
-import styles from "./Mark.module.css";
+import styles from "./mark.module.css";
 
 function Mark({cooCharacters}) {
   return <div className={styles.mark} style={{ left: `${cooCharacters.x}%`, top: `${cooCharacters.y}%` }}></div>;
