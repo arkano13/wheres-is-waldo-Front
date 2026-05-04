@@ -1,0 +1,117 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 3rem 1rem;
+}
+
+/* 🔴 badge igual que tu start */
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badgeDot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #e24b4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badgeDotInner {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e24b4a;
+}
+
+.badgeText {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #888;
+}
+
+/* 🔥 404 grande */
+.title {
+  font-size: clamp(4rem, 12vw, 7rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+}
+
+/* línea roja */
+.titleAccent {
+  width: 48px;
+  height: 2px;
+  background: #e24b4a;
+  border-radius: 1px;
+  margin: 0.5rem auto 1.5rem;
+}
+
+/* texto */
+.subtitle {
+  font-size: 14px;
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* botones */
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 260px;
+}
+
+.navLinkPrimary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: #e24b4a;
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: opacity 0.15s;
+}
+
+.navLinkPrimary:hover {
+  opacity: 0.85;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: #fff;
+  border: 0.5px solid rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.navLink:hover {
+  background: #f5f5f5;
+}

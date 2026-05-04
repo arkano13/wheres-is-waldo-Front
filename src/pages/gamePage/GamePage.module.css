@@ -1,0 +1,16 @@
+.gamepageContainer{
+    position: relative;
+  max-width: 1200px; 
+}
+.waldoimg {
+  width: 100%;
+  max-width: 1200px; /* ajusta según tu layout */
+  height: auto;
+  display: block;
+  position: relative;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

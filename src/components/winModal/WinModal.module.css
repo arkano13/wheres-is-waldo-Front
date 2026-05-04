@@ -1,0 +1,111 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal {
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.badgeDot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #e24b4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badgeDotInner {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e24b4a;
+}
+
+.badgeText {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #888;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.25rem;
+  color: #fff;
+}
+
+.titleAccent {
+  width: 48px;
+  height: 2px;
+  background: #e24b4a;
+  border-radius: 1px;
+  margin: 0 auto 1.5rem;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 20px;
+  background: #2a2a2a;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: #555;
+}
+
+.btn {
+  padding: 14px 20px;
+  background: #e24b4a;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.btn:hover {
+  opacity: 0.88;
+}

@@ -1,0 +1,103 @@
+.btnContainer {
+  display: flex;
+}
+
+/* ── Navbar ── */
+.navLink {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.navLink:hover {
+  background: #f5f5f5;
+  color: #1a1a1a;
+}
+.navLinkActive {
+  color: #e24b4a;
+  background: #fdf1f1;
+}
+
+/* ── StartPage: primario (rojo sólido) ── */
+.navLinkPrimary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 28px;
+  background: #e24b4a;
+  border-radius: 14px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  width: 100%;
+  transition: opacity 0.15s;
+    opacity: 1;
+  animation: fadeSlideUp 0.7s ease forwards;
+  animation-delay: 0.5s;
+}
+.navLinkPrimary:hover { opacity: 0.88; }
+
+.navLinkSecondary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 16px;
+  background: #fff;
+  border: 0.5px solid rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  flex: 1;
+  transition: background 0.15s;
+}
+.navLinkSecondary:hover { background: #f5f5f5; }
+
+/* ── StartPage: secundario (borde gris) ── */
+.navLinkSecondary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: #fff;
+  border: 0.5px solid rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background 0.15s;
+}
+.navLinkSecondary:hover { background: #f5f5f5; }
+
+/* ── StartPage: ghost (borde rojo) ── */
+.navLinkGhost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: transparent;
+  border: 0.5px solid #e24b4a;
+  border-radius: 12px;
+  color: #e24b4a;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background 0.15s;
+}
+.navLinkGhost:hover { background: #fdf1f1; }

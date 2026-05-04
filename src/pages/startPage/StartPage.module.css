@@ -1,0 +1,149 @@
+/* StartPage.module.css */
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.badgeDot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #e24b4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badgeDotInner {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e24b4a;
+}
+
+.badgeText {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #888;
+}
+
+.title {
+  font-size: clamp(3rem, 10vw, 5.5rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.25rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.titleAccent {
+  width: 48px;
+  height: 2px;
+  background: #e24b4a;
+  border-radius: 1px;
+  margin: 0 auto 3rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 260px;
+}
+
+.navLinkPrimary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: #e24b4a;
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: opacity 0.15s;
+}
+
+.navLinkPrimary:hover {
+  opacity: 0.88;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: #fff;
+  border: 0.5px solid rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background 0.15s;
+}
+
+.navLink:hover {
+  background: #f5f5f5;
+}
+.navSmall {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title {
+  /* ...lo que ya tienes... */
+  opacity: 0;
+  animation: fadeSlideUp 0.7s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.titleAccent {
+  /* ...lo que ya tienes... */
+  opacity: 0;
+  animation: fadeSlideUp 0.7s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.navSmall {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  opacity: 0;
+  animation: fadeSlideUp 0.7s ease forwards;
+  animation-delay: 0.65s;
+}

@@ -1,0 +1,14 @@
+/* Mark.module.css */
+.mark {
+  width: 16px;           /* Tamaño del círculo */
+  height: 16px;
+  background-color: red;  /* Color de la marca */
+  border-radius: 50%;     /* Hace que sea un círculo perfecto */
+  border: 2px solid white; /* Borde opcional para resaltar */
+  box-shadow: 0 0 4px rgba(0,0,0,0.3); /* Sutil sombra para destacarlo */
+position: absolute;      /* Para poder ubicarlo en cualquier parte */
+  cursor: pointer;         /* Cambia el cursor para indicar que es clickeable */
+  transition: transform 0.2s; /* Animación pequeña al interactuar */
+  transform: translate(-50%, -50%);
+}
+

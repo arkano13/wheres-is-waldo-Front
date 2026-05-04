@@ -1,0 +1,33 @@
+.menu {
+  position: absolute;
+  top: 100px; /* ajusta según tu imagen */
+  left: 100px;
+  
+  display: flex;
+  gap: 10px;
+
+  background: rgba(0, 0, 0, 0.8);
+  padding: 8px 10px;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  position: absolute
+}
+
+.characterBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s;
+}
+
+.characterBtn:hover {
+  transform: scale(1.1);
+}
+
+.characterBtn img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}

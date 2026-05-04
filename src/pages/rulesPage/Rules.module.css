@@ -1,0 +1,72 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 3rem 1rem;
+}
+
+/* mismo sistema */
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badgeDot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #e24b4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badgeDotInner {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e24b4a;
+}
+
+.badgeText {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.title {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.titleAccent {
+  width: 40px;
+  height: 2px;
+  background: #e24b4a;
+  margin-bottom: 2rem;
+}
+
+/* reglas */
+.rules {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.rules p {
+  font-size: 14px;
+  color: #6c757d;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  border: 0.5px solid rgba(0,0,0,0.1);
+}
